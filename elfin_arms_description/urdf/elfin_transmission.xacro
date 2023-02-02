@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- elfin left arm -->
+    <transmission name="elfin_l_joint1_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="elfin_l_joint1">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="elfin_l_joint1_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+
+    <transmission name="elfin_l_joint2_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="elfin_l_joint2">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="elfin_l_joint2_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+    
+    <transmission name="elfin_l_joint3_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="elfin_l_joint3">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="elfin_l_joint3_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+    
+    <transmission name="elfin_l_joint4_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="elfin_l_joint4">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="elfin_l_joint4_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+    
+    <transmission name="elfin_l_joint5_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="elfin_l_joint5">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="elfin_l_joint5_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+    
+    <transmission name="elfin_l_joint6_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="elfin_l_joint6">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="elfin_l_joint6_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+
+    <!-- elfin right arm -->
+    <transmission name="elfin_r_joint1_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="elfin_r_joint1">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="elfin_r_joint1_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+
+    <transmission name="elfin_r_joint2_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="elfin_r_joint2">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="elfin_r_joint2_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+    
+    <transmission name="elfin_r_joint3_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="elfin_r_joint3">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="elfin_r_joint3_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+    
+    <transmission name="elfin_r_joint4_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="elfin_r_joint4">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="elfin_r_joint4_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+    
+    <transmission name="elfin_r_joint5_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="elfin_r_joint5">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="elfin_r_joint5_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+    
+    <transmission name="elfin_r_joint6_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="elfin_r_joint6">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="elfin_r_joint6_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+    
+</robot>
