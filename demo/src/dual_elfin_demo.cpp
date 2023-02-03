@@ -47,8 +47,12 @@ int main(int argc,char ** argv)
         ROS_INFO("Connect Robot Success!!!");
     }
  
-    left_arm.setNamedTarget("pose1");
+    left_arm.setNamedTarget("left_home");
     left_arm.move(); 
+    sleep(1);
+
+    right_arm.setNamedTarget("right_home");
+    right_arm.move(); 
     sleep(1);
     
     //左臂关节运动
@@ -120,16 +124,7 @@ int main(int argc,char ** argv)
         }
     }
     sleep(1);
- 
-    left_arm.setNamedTarget("pose1");
-    left_arm.move();
-    sleep(1);
-
-    right_arm.setNamedTarget("pose2");
-    right_arm.move();
-    sleep(1);
-    
+   
     ros::shutdown(); 
- 
     return 0;
 }
