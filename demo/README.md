@@ -9,7 +9,8 @@
 步骤：
 
     1. 将demo/lib中的libHR_Pro.so放入/usr/lib目录下
-    2. 打开src/dual_elfin_demo.cpp，修改连接真实机器人HRIF_Connect接口中的IP地址为真实机器人的IP地址，请注意分清真实机器人IP与Moveit中的左右臂的定义
-    3. 启动Moveit仿真，参考dual_elfin_robot/README.md
-    4. 运行示例程序: rosrun demo demo_node
-    5. 用户可自行模改控制双臂程序,在使用过程中谨防撞机
+    2. 打开src/dual_elfin_demo.cpp，确定在ROS的PC下能够ping同两台机械臂后，修改连接真实机器人HRIF_Connect接口中的IP地址为真实机器人的IP地址，请注意分清真实机器人IP与Moveit中的左右臂的定义
+    3. 重新编译demo, catkin_make -DCATKIN_WHITELIST_PACKAGES='demo'
+    4. 启动Moveit仿真，参考dual_elfin_robot/README.md
+    5. 运行示例程序: rosrun demo demo_node
+    6. 用户可自行模改控制双臂程序,在使用过程中谨防撞机
