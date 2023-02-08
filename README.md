@@ -36,11 +36,11 @@ $ roslaunch elfin_arms_gazebo dual_elfin3_empty_world.launch
 
 运行MoveIt!模块, RViz界面:
 ```sh
-$ roslaunch dual_elfin3_config moveit_planning_execution.launch
+$ roslaunch dual_elfin3_moveit_config moveit_planning_execution.launch
 ```
 如果你此时不想运行RViz界面，请用以下命令:
 ```sh
-$ roslaunch dual_elfin3_config moveit_planning_execution.launch display:=false
+$ roslaunch dual_elfin3_moveit_config moveit_planning_execution.launch display:=false
 ```
 
 ### 说明
