@@ -31,7 +31,7 @@ $ source devel/setup.bash
 
 用Gazebo仿真请运行：
 ```sh
-$ roslaunch elfin_arms_gazebo elfin3_empty_world.launch
+$ roslaunch elfin_arms_gazebo dual_elfin3_empty_world.launch
 ```
 
 运行MoveIt!模块, RViz界面:
