@@ -3,6 +3,9 @@ project(demo)
 
 add_compile_options(-std=c++11)
 
+set(COMMUNICATION CPP)        # CPP
+# set(COMMUNICATION PY)          # PY
+
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
@@ -139,17 +142,27 @@ include_directories(
 # either from message generation or dynamic reconfigure
 # add_dependencies(demo ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
-# Declare a C++ executable
-add_executable(demo_node src/dual_elfin_demo.cpp)
+if(${COMMUNICATION} STREQUAL "CPP")
+    message(STATUS  "The COMMUNICATION is C++")
+    # Declare a C++ executable
+    add_executable(demo_node src/dual_elfin_demo.cpp)
 
-# Add cmake target dependencies of the executable
-# same as for the library above
-add_dependencies(demo_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+    # Add cmake target dependencies of the executable
+    # same as for the library above
+    add_dependencies(demo_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
-# Specify libraries to link a library or executable target against
-target_link_libraries(demo_node -lHR_Pro
-  ${catkin_LIBRARIES}
-)
+    # Specify libraries to link a library or executable target against
+    target_link_libraries(demo_node -lHR_Pro
+      ${catkin_LIBRARIES}
+    )
+
+elseif(${COMMUNICATION} STREQUAL "PY")
+    message(STATUS  "The COMMUNICATION is Python")
+
+else()
+    message(FATAL_ERROR "[CMake ERROR] The COMMUNICATION is error")
+endif()
+
 
 
 #############
